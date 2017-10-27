@@ -12,6 +12,7 @@
         "template"
     ],
     "scripts": {
+        "lint": "node_modules/.bin/eslint .",
         "test:base": "mocha --recursive --check-leaks --full-trace --exit",
         "test:unit": "npm run test:base ./test/support/setup/unit.js ./test/unit",
         "test:integration": "npm run test:base ./test/support/setup/integration.js ./test/integration",
@@ -31,8 +32,8 @@
     "devDependencies": {
         "chai": "^4.1.2",
         "chai-as-promised": "^7.1.1",
-        "eslint": "^3.17.1",
-        "eslint-config-loopback": "^8.0.0",
+        "eslint": "^4.9.0",
+        "eslint-config-joinbox": "git+https://github.com/joinbox/joinbox-linter-configuration.git",
         "loopback-cli": "^4.0.0",
         "mocha": "^4.0.1",
         "nsp": "^2.1.0",

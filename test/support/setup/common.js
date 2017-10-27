@@ -9,10 +9,10 @@ const Microservice = require('../../../lib/Microservice');
 
 chai.use(chaiAsPromised);
 
-before(function(){
-  return Microservice
-    .boot({ env: 'test' })
-    .then((service) => {
-      this.service = service;
-    });
+before(function() {
+    return Microservice
+        .boot({ env: 'test' })
+        .then((service) => {
+            this.service = service;
+        });
 });
