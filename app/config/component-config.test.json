@@ -1,0 +1,5 @@
+{
+  "../components/logger": {
+    "logLevel": "test"
+  }
+}
