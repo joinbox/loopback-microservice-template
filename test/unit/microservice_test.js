@@ -37,31 +37,4 @@ describe('The Microservice Class', function(){
     expect(service._bootOptions).to.have.property('env', 'dev');
   });
 
-  it('can be started, returning a promise which resolves the service', function(done){
-    const app = new MockApp();
-    const service = new Microservice(app);
-
-    app.set('url', 'http://test.com:3333');
-
-    service
-      .start()
-      .then((serv) => {
-        expect(serv).to.be.equal(service);
-        expect(app).to.have.property('listenCalls', 1);
-        done();
-      })
-      .catch(done);
-  });
-
-  it('can be stopped, returning a promise', function(){
-    const app = new MockApp();
-    const service = new Microservice(app);
-
-    app.set('url', 'http://test.com:3333');
-
-    return service
-      .start()
-      .then((serv) => serv.stop());
-  });
-
 });

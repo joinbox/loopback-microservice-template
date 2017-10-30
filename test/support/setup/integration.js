@@ -14,6 +14,11 @@ before(function() {
         });
 });
 
+// make sure the service runs, this will only
+beforeEach(function() {
+  return this.service.start();
+})
+
 after(function() {
     return this.service.stop();
 });
