@@ -12,6 +12,7 @@
         "template"
     ],
     "scripts": {
+        "start": "node .",
         "lint": "node_modules/.bin/eslint .",
         "test:base": "mocha --recursive --check-leaks --full-trace --exit",
         "test:unit": "npm run test:base ./test/support/setup/unit.js ./test/unit",
