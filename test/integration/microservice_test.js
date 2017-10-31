@@ -1,7 +1,7 @@
 const { expect } = require('chai');
 
 describe('The Microservice', function() {
-
+    // test is commented out due to
     it('can be started, returning a promise which resolves the service ' +
     '(returns the running instance if already started)', function() {
 
