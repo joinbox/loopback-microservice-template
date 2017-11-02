@@ -1,1 +1,1 @@
-# loopback-microservice-template
+# your-service-name
