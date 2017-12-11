@@ -3,16 +3,12 @@
  */
 const chai = require('chai');
 const chaiAsPromised = require('chai-as-promised');
+const Microservice = require('loopback-microservice');
 
 const testLib = require('../lib');
-const Microservice = require('../../../lib/Microservice');
 
 chai.use(chaiAsPromised);
 
-before(function() {
-    return Microservice
-        .boot({ env: 'test' })
-        .then((service) => {
-            this.service = service;
-        });
+before(async function() {
+    this.service = await Microservice.boot({env: 'test'});
 });

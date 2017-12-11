@@ -1,10 +1,10 @@
 const args = require('yargs').argv;
 
-const Microservice = require('./lib/Microservice');
+const Microservice = require('loopback-microservice');
 
 module.exports = Microservice;
 
-function loadBootOptions(path) {
+function loadBootOptions(path = './app/config/defaultBootOptions') {
     if (!path) return {};
     try {
         return Object.assign({}, require(path));
