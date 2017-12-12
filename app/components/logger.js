@@ -27,5 +27,5 @@ module.exports = function(app, options) {
         },
     };
 
-    app.set('logger', logger);
+    app.set('microservice-logger', logger);
 };
