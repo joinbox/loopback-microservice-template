@@ -3,6 +3,7 @@
     "sources": [
       "loopback/common/models",
       "loopback/server/models",
+      "loopback-component-jb-migration/src/models",
       "../models"
     ],
     "mixins": [
@@ -10,6 +11,10 @@
       "loopback/server/mixins",
       "../mixins"
     ]
+  },
+  "Migration": {
+    "dataSource": "db",
+    "public": false
   },
   "User": {
     "dataSource": "db"

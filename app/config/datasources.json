@@ -4,8 +4,8 @@
     "connector": "postgresql",
     "host": "0.0.0.0",
     "port": 5432,
-    "database": "",
-    "user": "",
-    "password": ""
+    "database": "microservice_test",
+    "user": "microservice_test",
+    "password": "test"
   }
 }

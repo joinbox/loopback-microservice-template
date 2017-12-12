@@ -3,5 +3,13 @@
     "mountPath": "/explorer",
     "generateOperationScopedModels": true
   },
-  "../components/logger": {}
+  "../components/logger": {},
+
+  "loopback-component-relation-filter": {
+    "rejectUnknownProperties": true
+  },
+
+  "loopback-component-jb-migration": {
+
+  }
 }
