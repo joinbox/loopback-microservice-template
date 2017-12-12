@@ -1,0 +1,26 @@
+version: '2'
+services:
+  book-microservice-postgres:
+    image: postgres:latest
+    container_name: 'book-microservice-postgres'
+    environment:
+      - POSTGRES_PASSWORD=book-microservice
+      - POSTGRES_USER=book-microservice
+      - POSTGRES_DB=book-microservice
+    restart: always
+    command: postgres
+    ports:
+      - "5432:5432"
+  book-microservice-node:
+    image: book-microservice-node:latest
+    container_name: 'book-microservice-node'
+    environment:
+      - NODE_ENV=dev
+    ports:
+      - "11100:11100"
+    links:
+      - book-microservice-postgres:book-microservice-postgres
+    restart: always
+    command: "node /home/ubuntu/apps/book-microservice/index.js"
+    volumes:
+      - ./:/home/ubuntu/apps/book-microservice/

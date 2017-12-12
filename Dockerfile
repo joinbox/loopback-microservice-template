@@ -27,3 +27,14 @@ RUN sudo apt-get install -y nodejs
 # Configure npm
 RUN mkdir -p /home/ubuntu/npm && npm config set prefix /home/ubuntu/npm
 ENV PATH $PATH:/home/ubuntu/npm/bin
+
+# Copy and install the application
+RUN mkdir -p /home/ubuntu/apps/book-microservice
+WORKDIR /home/ubuntu/apps/book-microservice/
+
+COPY ./package.json ./
+COPY ./package-lock.json ./
+COPY ./index.js ./
+COPY ./app ./
+
+RUN npm install
