@@ -11,5 +11,8 @@
 
   "loopback-component-jb-migration": {
 
+  },
+  "loopback-component-sdk": {
+    "mountPath": "/sdk"
   }
 }
