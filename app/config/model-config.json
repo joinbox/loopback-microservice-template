@@ -3,6 +3,7 @@
     "sources": [
       "loopback/common/models",
       "loopback/server/models",
+      "loopback-dummy-project/models",
       "loopback-component-jb-migration/src/models",
       "../models"
     ],
@@ -37,5 +38,21 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Book": {
+      "dataSource": "db",
+      "public": true
+  },
+  "Page": {
+      "dataSource": "db",
+      "public": true
+  },
+  "Author": {
+      "dataSource": "db",
+      "public": true
+  },
+  "Publisher": {
+      "dataSource": "db",
+      "public": true
   }
 }
