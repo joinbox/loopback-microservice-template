@@ -28,7 +28,7 @@
     "loopback-component-explorer": "^5.0.0",
     "loopback-component-jb-migration": "github:joinbox/loopback-component-jb-migration#initial-setup",
     "loopback-component-relation-filter": "github:joinbox/loopback-component-relation-filter#initial-setup",
-    "loopback-component-sdk": "^1.1.0",
+    "@joinbox/loopback-component-angular-sdk": "^2.0.0",
     "loopback-connector-postgresql": "^3.2.0",
     "loopback-microservice": "github:joinbox/loopback-microservice#initial-setup",
     "serve-favicon": "^2.0.1",
