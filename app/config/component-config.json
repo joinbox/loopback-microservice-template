@@ -12,7 +12,7 @@
   "loopback-component-jb-migration": {
 
   },
-  "loopback-component-sdk": {
+  "@joinbox/loopback-component-angular-sdk": {
     "mountPath": "/sdk"
   }
 }
