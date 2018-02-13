@@ -20,12 +20,16 @@
     "test": "npm run test:base ./test/support/setup/integration.js ./test/integration ./test/unit"
   },
   "dependencies": {
+    "@joinbox/loopback-component-angular-sdk": "^2.0.0",
+    "@joinbox/loopback-component-custom-headers": "git+https://github.com/joinbox/loopback-component-custom-headers.git#develop",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "helmet": "^1.3.0",
-    "loopback": "^3.0.0",
+    "loopback": "^3.17.1",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^5.0.0",
+    "loopback-component-jb-migration": "github:joinbox/loopback-component-jb-migration#initial-setup",
+    "loopback-component-relation-filter": "github:joinbox/loopback-component-relation-filter#initial-setup",
     "loopback-connector-postgresql": "^3.2.0",
     "loopback-microservice": "github:joinbox/loopback-microservice#initial-setup",
     "serve-favicon": "^2.0.1",
@@ -35,11 +39,12 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
-    "eslint": "^4.9.0",
+    "eslint": "^4.13.1",
     "eslint-config-joinbox": "git+https://github.com/joinbox/joinbox-linter-configuration.git",
-    "loopback-cli": "^4.0.0",
+    "loopback-cli": "^4.1.0",
+    "loopback-dummy-project": "^1.1.0",
     "mocha": "^4.0.1",
     "nsp": "^2.1.0",
-    "superagent": "^3.8.0"
+    "superagent": "^3.8.2"
   }
 }

@@ -3,5 +3,19 @@
     "mountPath": "/explorer",
     "generateOperationScopedModels": true
   },
-  "../components/logger": {}
+  "../components/logger": {},
+
+  "loopback-component-relation-filter": {
+    "rejectUnknownProperties": true
+  },
+
+  "loopback-component-jb-migration": {
+
+  },
+  "@joinbox/loopback-component-custom-headers": {
+
+  },
+  "@joinbox/loopback-component-angular-sdk": {
+    "mountPath": "/sdk"
+  }
 }

@@ -3,6 +3,8 @@
     "sources": [
       "loopback/common/models",
       "loopback/server/models",
+      "loopback-dummy-project/models",
+      "loopback-component-jb-migration/src/models",
       "../models"
     ],
     "mixins": [
@@ -10,6 +12,10 @@
       "loopback/server/mixins",
       "../mixins"
     ]
+  },
+  "Migration": {
+    "dataSource": "db",
+    "public": false
   },
   "User": {
     "dataSource": "db"
@@ -32,5 +38,28 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Book": {
+      "dataSource": "db",
+      "public": true
+  },
+  "Page": {
+      "dataSource": "db",
+      "public": true
+  },
+  "Author": {
+      "dataSource": "db",
+      "public": true,
+      "options": {
+          "setCustomHeaders": true,
+          "customHeaders": {
+              "Cache-Control": "public, max-age=86400",
+              "Vary": "User-Agent"
+          }
+      }
+  },
+  "Publisher": {
+      "dataSource": "db",
+      "public": true
   }
 }
