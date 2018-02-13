@@ -12,7 +12,7 @@
   "loopback-component-jb-migration": {
 
   },
-  "loopback-component-custom-headers": {
+  "@joinbox/loopback-component-custom-headers": {
 
   },
   "@joinbox/loopback-component-angular-sdk": {
