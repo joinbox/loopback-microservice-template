@@ -5,7 +5,7 @@
   },
   "../components/logger": {},
 
-  "loopback-component-relation-filter": {
+  "@joinbox/loopback-component-relation-filter": {
     "rejectUnknownProperties": true
   },
 
@@ -13,6 +13,9 @@
 
   },
   "@joinbox/loopback-component-custom-headers": {
+
+  },
+  "@joinbox/loopback-component-permission-tree": {
 
   },
   "@joinbox/loopback-component-angular-sdk": {
