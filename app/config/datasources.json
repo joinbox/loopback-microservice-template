@@ -9,7 +9,7 @@
         "password": "book-microservice"
     },
     "auth": {
-        "url": "http://localhost:10100/",
+        "url": "http://sbc-api:10100/",
         "name": "auth",
         "connector": "loopback-connector-remote"
     }
