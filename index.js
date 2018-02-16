@@ -1,6 +1,6 @@
 const args = require('yargs').argv;
 
-const Microservice = require('loopback-microservice');
+const Microservice = require('@joinbox/loopback-microservice');
 
 module.exports = Microservice;
 

@@ -4,7 +4,7 @@
       "loopback/common/models",
       "loopback/server/models",
       "loopback-dummy-project/models",
-      "loopback-component-jb-migration/src/models",
+      "@joinbox/loopback-component-jb-migration/src/models",
       "../models"
     ],
     "mixins": [
@@ -18,25 +18,25 @@
     "public": false
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "auth"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "auth",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "auth",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "auth",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "auth",
     "public": false
   },
   "Book": {

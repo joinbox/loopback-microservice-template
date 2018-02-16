@@ -9,7 +9,7 @@
     "rejectUnknownProperties": true
   },
 
-  "loopback-component-jb-migration": {
+  "@joinbox/loopback-component-jb-migration": {
 
   },
   "@joinbox/loopback-component-custom-headers": {
