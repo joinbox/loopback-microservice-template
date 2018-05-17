@@ -1,11 +1,16 @@
 {
-  "db": {
-    "name": "db",
-    "connector": "postgresql",
-    "host": "book-microservice-postgres",
-    "port": 5432,
-    "database": "book-microservice",
-    "user": "book-microservice",
-    "password": "book-microservice"
-  }
+    "db": {
+        "name": "db",
+        "connector": "postgresql",
+        "host": "book-microservice-postgres",
+        "port": 5432,
+        "database": "book-microservice",
+        "user": "book-microservice",
+        "password": "book-microservice"
+    },
+    "auth": {
+        "url": "http://sbc-api:10100/",
+        "name": "auth",
+        "connector": "loopback-connector-remote"
+    }
 }
