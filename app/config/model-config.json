@@ -3,7 +3,6 @@
     "sources": [
       "loopback/common/models",
       "loopback/server/models",
-      "loopback-dummy-project/models",
       "@joinbox/loopback-component-jb-migration/src/models",
       "../models"
     ],
@@ -38,28 +37,5 @@
   "Role": {
     "dataSource": "auth",
     "public": false
-  },
-  "Book": {
-      "dataSource": "db",
-      "public": true
-  },
-  "Page": {
-      "dataSource": "db",
-      "public": true
-  },
-  "Author": {
-      "dataSource": "db",
-      "public": true,
-      "options": {
-          "setCustomHeaders": true,
-          "customHeaders": {
-              "Cache-Control": "public, max-age=86400",
-              "Vary": "User-Agent"
-          }
-      }
-  },
-  "Publisher": {
-      "dataSource": "db",
-      "public": true
   }
 }

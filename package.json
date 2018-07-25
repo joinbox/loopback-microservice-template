@@ -44,7 +44,6 @@
     "eslint": "^4.17.0",
     "eslint-config-joinbox": "git+https://github.com/joinbox/joinbox-linter-configuration.git",
     "loopback-cli": "^4.1.0",
-    "loopback-dummy-project": "^1.1.0",
     "mocha": "^4.1.0",
     "nsp": "^2.1.0",
     "superagent": "^3.8.2"

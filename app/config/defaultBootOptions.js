@@ -4,7 +4,7 @@ const dsRootDir = appConfigRootDir;
 const modelsRootDir = appConfigRootDir;
 const middlewareRootDir = appConfigRootDir;
 const componentRootDir = appConfigRootDir;
-const bootDirs = [`${appRootDir}/boot`, 'loopback-dummy-project/boot'];
+const bootDirs = [`${appRootDir}/boot`];
 
 module.exports = {
     appRootDir,
