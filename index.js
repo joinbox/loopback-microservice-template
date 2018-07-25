@@ -18,9 +18,10 @@ if (require.main === module) {
     // optional argument to pass in the path to module exporting boot options as an object
     // e.g. `npm start -- --options=../bootOpts`
     const optionsFile = args.options;
-    const options = loadBootOptions(optionsFile);
+    const boot = loadBootOptions(optionsFile);
+    const options = { boot };
 
-    options.env = options.env || process.env.NODE_ENV;
+    options.env = process.env.NODE_ENV || options.env;
 
     Microservice
         .start(options)
