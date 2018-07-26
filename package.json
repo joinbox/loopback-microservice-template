@@ -1,6 +1,6 @@
 {
   "name": "loopback-microservice-template",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Template for loopback microservice projects",
   "engines": {
     "node": "^8.0.0",
@@ -13,8 +13,10 @@
   ],
   "scripts": {
     "start": "node .",
-    "lint": "node_modules/.bin/eslint .",
-    "test:base": "mocha --recursive --check-leaks --full-trace --exit",
+    "lint": "npm run lint:file .",
+    "lint:file": "node_modules/.bin/eslint -- ",
+    "test:watch": "WATCH_TESTS=\"--watch\" npm run test",
+    "test:base": "./node_modules/.bin/mocha $NODE_DEBUG_OPTION $WATCH_TESTS --recursive --check-leaks --full-trace --exit",
     "test:unit": "npm run test:base ./test/support/setup/unit.js ./test/unit",
     "test:integration": "npm run test:base ./test/support/setup/integration.js ./test/integration",
     "test": "npm run test:base ./test/support/setup/integration.js ./test/integration ./test/unit"
