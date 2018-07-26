@@ -4,13 +4,13 @@ const Microservice = require('@joinbox/loopback-microservice');
 
 module.exports = Microservice;
 
-function loadBootOptions(path = './app/config/defaultBootOptions') {
+function loadBootOptions(path = './config/defaultBootOptions') {
     if (!path) return {};
     try {
         return Object.assign({}, require(path));
     } catch (err) {
         const message = `Unable to load boot options from "${path}" (${err.message})`;
-        throw new Error(message);
+        throw new Microservice.MicroserviceError(message);
     }
 }
 
@@ -21,7 +21,7 @@ if (require.main === module) {
     const boot = loadBootOptions(optionsFile);
     const options = { boot };
 
-    options.env = process.env.NODE_ENV || options.env;
+    options.boot.env = process.env.NODE_ENV || boot.env;
 
     Microservice
         .start(options)

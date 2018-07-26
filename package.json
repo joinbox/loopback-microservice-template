@@ -2,6 +2,7 @@
   "name": "loopback-microservice-template",
   "version": "0.1.0",
   "description": "Template for loopback microservice projects",
+  "main": "./app/index",
   "engines": {
     "node": "^8.0.0",
     "npm": "^5.0.0"
@@ -12,7 +13,7 @@
     "template"
   ],
   "scripts": {
-    "start": "node .",
+    "start": "node ./app/index.js",
     "lint": "npm run lint:file .",
     "lint:file": "node_modules/.bin/eslint -- ",
     "test:watch": "WATCH_TESTS=\"--watch\" npm run test",

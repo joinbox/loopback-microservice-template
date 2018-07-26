@@ -2,6 +2,9 @@
   "restApiRoot": "/api",
   "host": "0.0.0.0",
   "port": 3333,
+  "microservice": {
+    "name": "microservice-template"
+  },
   "remoting": {
     "context": false,
     "rest": {

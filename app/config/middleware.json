@@ -45,6 +45,12 @@
     "loopback#urlNotFound": {}
   },
   "final:after": {
-    "strong-error-handler": {}
+    "@joinbox/loopback-microservice#errorHandler": {
+      "params": {
+        "debug": false,
+        "log": true,
+        "microservice": "${microservice}"
+      }
+    }
   }
 }

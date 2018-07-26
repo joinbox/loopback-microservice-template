@@ -8,8 +8,7 @@
     ],
     "mixins": [
       "loopback/common/mixins",
-      "loopback/server/mixins",
-      "./mixins"
+      "loopback/server/mixins"
     ]
   },
   "Migration": {
