@@ -21,8 +21,6 @@ const mixinDirs = [`${appRootDir}/mixins`];
 // Folders to look for boot directories
 const bootDirs = [`${appRootDir}/boot`];
 
-console.log(mixinDirs);
-
 module.exports = {
     appRootDir,
     appConfigRootDir,

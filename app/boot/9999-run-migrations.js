@@ -6,5 +6,5 @@ module.exports = async function(app, next) {
     } catch (err) {
         return next(err);
     }
-    next();
+    return next();
 };
