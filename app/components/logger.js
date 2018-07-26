@@ -10,7 +10,7 @@ module.exports = function(app, options) {
     const logger = {
         passToConsole(operation, args) {
             if (logEnabled) {
-                console[operation].apply(console, args);
+                console[operation].call(console, ...args);
             }
         },
         log(...args) {

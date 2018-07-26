@@ -2,11 +2,12 @@
     "db": {
         "name": "db",
         "connector": "postgresql",
-        "host": "book-microservice-postgres",
+        "host": "your-db-host",
         "port": 5432,
-        "database": "book-microservice",
-        "user": "book-microservice",
-        "password": "book-microservice"
+        "database": "your-db",
+        "user": "your-user",
+        "password": "your-password",
+        "schema": "your-schema"
     },
     "auth": {
         "url": "http://sbc-api:10100/",
