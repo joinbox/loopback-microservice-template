@@ -5,7 +5,6 @@ const Microservice = require('@joinbox/loopback-microservice');
 module.exports = Microservice;
 
 function loadBootOptions(path = './config/defaultBootOptions') {
-    if (!path) return {};
     try {
         return Object.assign({}, require(path));
     } catch (err) {
