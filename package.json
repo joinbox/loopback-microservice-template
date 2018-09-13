@@ -1,6 +1,6 @@
 {
   "name": "loopback-microservice-template",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "Template for loopback microservice projects",
   "main": "./app/index.js",
   "engines": {
