@@ -1,4 +1,4 @@
-# Loopback Microservice template
+# Loopback Microservice Template
 
 A template project for writing loopback based microservices.
 The package contains some custom loopback npm packages to work with loopback in a microservice arcitecture. See the list below for further information.
