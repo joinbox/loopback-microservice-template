@@ -9,12 +9,20 @@ using different protocols (such as `loopback-connector-remote`, `loopback-connec
 ### Remote vs. Rest
 
 At first sight the remote connector simply seems to be a wrapper for the underlying protocol (REST
-by default). But during the evaluation of the connectors, it seemed to be the case, that the remote
-connector has some important characteristics:
+by default). The [documentation](https://github.com/strongloop/loopback-connector-remote) states:
 
-   - It seems to optimize the queries to the remote service.
-   - It does not emit the events the other datasources emit (_.e.g._ `before execute`)
-   - It is fully based on strong-remoting
+> The remote connector enables you to use a LoopBack application as a data source via REST.
+> ...
+> In general, using the remote connector is more convenient than calling into REST API, and enables
+you to switch the transport later if you need to.
+
+In practice the remote connector behaves differently from data sources based on the `REST connector`:
+
+   - It seems to optimize the queries to the remote service by fully leveraging the possibilities of
+   the Loopback filter query syntax (which exceeds a pure REST).
+   - It does not emit the events the other data sources emit (_.e.g._ `before execute`)
+   - It is fully based on [strong-remoting](https://github.com/strongloop/strong-remoting) which allows
+   us to modify and inspect the behavior of the data source in a standardized way.
 
 #### Hooks
 

@@ -12,6 +12,11 @@ Loopback Mixins are defined as a function within your mixins folder (`my-mixin.j
   }
 ```
 
+The Loopback core is heavily based on mixins. A typical use case for mixins is inheritance (within
+an application as well as between different applications and packages). Loopback models do not
+support proper inheritance: the definition file is respected but the constructor function is not
+called. So to inherit methods, a model should define its methods via mixin.
+
 ### Loading
 
 To make the Mixins available to the models one has to either add the source dir (or the files) to the `_meta` section of the `model-config.json`:
