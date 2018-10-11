@@ -3,12 +3,12 @@
     "sources": [
       "loopback/common/models",
       "loopback/server/models",
-      "@joinbox/loopback-component-jb-migration/src/models",
       "../models"
     ],
     "mixins": [
       "loopback/common/mixins",
-      "loopback/server/mixins"
+      "loopback/server/mixins",
+      "@joinbox/loopback-component-jb-migration/src/mixins"
     ]
   },
   "Migration": {

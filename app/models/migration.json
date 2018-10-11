@@ -1,0 +1,8 @@
+{
+    "name": "Migration",
+    "plural": "migrations",
+    "base": "PersistedModel",
+    "mixins": {
+        "MigrationMixin": true
+    }
+}
