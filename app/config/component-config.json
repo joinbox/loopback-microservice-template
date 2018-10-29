@@ -10,7 +10,7 @@
   },
 
   "@joinbox/loopback-component-jb-migration": {
-
+    "exposeAt": "migration"
   },
   "@joinbox/loopback-component-custom-headers": {
 
